@@ -1,6 +1,6 @@
 jQuery - toTop()
 =======
-A simple, customizable and light-weight (~1KB) plugin for smoothly scroll back to top.
+A simple, customizable and light-weight (~1KB) plugin for smoothly Scroll back to Top.
 
 ### How to Use:
 ------
