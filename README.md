@@ -33,7 +33,7 @@ You can add and style your element as you want
 | bottom | Integer (px) | Position from bottom. `default: 30` |
 
 
-# Plugin activation with options
+### Plugin activation with options
 
 ````javascript
   $('.to-top').toTop({
