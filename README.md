@@ -14,7 +14,7 @@ A simple, customizable and light-weight (~1KB) plugin for smoothly scroll back t
 ````html
   <a class="to-top">Top &uarr;</a>
 ````
-  //You can add and style your element as you want
+You can add and style your element as you want
 
 **3. Activate the Plugin**
 ````javascript
@@ -33,7 +33,7 @@ A simple, customizable and light-weight (~1KB) plugin for smoothly scroll back t
 | bottom | Integer (px) | Position from bottom. `default: 30` |
 
 
-** Plugin activation with options **
+# Plugin activation with options
 
 ````javascript
   $('.to-top').toTop({
