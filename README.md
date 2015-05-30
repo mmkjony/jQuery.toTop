@@ -2,6 +2,9 @@ jQuery - toTop()
 =======
 A simple, customizable and light-weight (~1KB) plugin for smoothly Scroll back to Top.
 
+------
+[View Demo](http://mmkjony.github.io/jQuery.toTop/)
+
 ### How to Use:
 ------
 **1. At first include [jQuery](http://jquery.com/download/) and jquery.toTop.js**
