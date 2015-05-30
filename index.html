@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="jQuery toTop is a simple and light-weight plugin for smoothly auto scroll to top" />
+    <meta name="author" content="MMK Jony" />
+    <title>.:: jQuery Scroll to Top Plugin ::.</title>
+    
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+        }body {
+            font-family: 'Open Sans', sans-serif;
+            color: #444;
+            line-height: 1.4;
+        }.wrapper {
+            width: 85%;
+            margin: 0 auto;
+            padding: 30 0;
+            overflow: hidden;
+            clear: both;
+        }header, footer {
+            background: #f2f2f2;
+            width: 100%;
+            border-bottom: 2px groove #444;
+        }footer {
+            border-bottom: 0;
+            padding: 100px;
+            text-align: center;
+            box-sizing: border-box;
+        }.header {
+            padding: 100px;
+            text-align: center;
+        }header h1 {
+            font-size: 48px;
+        }header h3 {
+            font-size: 26px;
+            font-weight: 400;
+        }.fork-mmk {
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }.info {
+            padding: 30px 0 !important;
+            overflow: hidden;
+        }.feature, .credit {
+            width: 50%;
+            max-width: 50%;
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
+        }.feature h3, .credit h3 {
+            text-transform: capitalize;
+            font-size: 24px;
+            display: inline-block;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 15px;
+        }.feature ul {
+            list-style-type: square;
+            margin-left: 15px;
+        }.credit {
+            border-left: 1px dotted #ccc;
+        }.wrapper a, .wrapper a:hover, .wrapper a:active, .wrapper a:focus, .wrapper a:before, .wrapper a:after {
+            color: #444;
+            text-decoration: none;
+            -webkit-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            transition: all .3s linear;
+            position: relative;
+        }.credit p > a {
+            font-weight: 600;
+        }.credit p > a:before {
+            content: "";
+            width: 0;
+            height: 1px;
+            background: #444;
+            position: absolute;
+            left: 0;
+            top: 105%;
+        }.credit p > a:hover:before {
+            width: 100%;
+        }.dl-btn {
+            margin-top: 30px;
+        }.btn {
+            padding: 10px 20px;
+            background: #444;
+            border: 1px solid #444;
+            color: #f2f2f2 !important;
+            border-radius: 7px;
+            display: inline-block;
+        }.btn:hover {
+            background: #f2f2f2;
+            color: #444 !important;
+        }.dummy {
+            padding: 30px 0 !important;
+        }.dummy h2 {
+            margin-top: 30px;
+            text-align: center;
+        }@media screen and (max-width: 767px) {
+            .feature, .credit {
+                width: 100%;
+                max-width: 100%;
+                float: none;
+                padding: 15px;
+            }.credit {
+                text-align: center;
+            }}
+        
+    </style>
+    
+</head>
+<body>
+   
+   <header>
+       <div class="wrapper">
+           <div class="header">
+               <h1>jQuery toTop()</h1>
+               <h3>A simple, customizable and light-weight plugin for smoothly scroll back to top</h3>
+           </div>
+       </div>
+   </header>
+   <div class="wrapper">
+       <div class="info">
+           <div class="feature">
+               <h3>Some key feature of this plugin</h3>
+               
+               <ul>
+                   <li>Very Simple and super friendly plugin</li>
+                   <li>Very light-weight, minified version is sized less than 1KB</li>
+                   <li>Highly customizable options</li>
+                   <li>You can use any html elements, and style as you want</li>
+                   <li>100% bug-free</li>
+               </ul>
+           </div>
+           
+           <div class="credit">
+               <h3>Some more Informations</h3>
+               <p>Script Name: jQuery.toTop.js</p>
+               <p>Version: 1.0</p>
+               <p>Developed by: <a href="https://github.com/mmkjony">MMK Jony</a></p>
+               <p>License: Licensed under MIT</p>
+               
+               <div class="dl-btn">
+                   <a href="#" class="btn">Download</a> 
+                   &nbsp; or &nbsp; 
+                   <a href="#" class="btn">View on Github</a>
+               </div>
+           </div>
+       </div>
+       
+       <div class="dummy">
+           <h2>Here are some dummy contents</h2>
+           
+           <br><hr>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+           <br>
+           <h3>This is a dummy title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maiores eveniet autem fuga voluptates magnam voluptatum vitae, sequi. Minima neque ad veniam quod ex a voluptates culpa fugit dicta eligendi.</p>
+           <br><hr><br>
+       </div>
+       
+   </div> <!--/ .wrapper -->
+   
+   <footer>
+       <h1>Enough!!</h1>
+       <br>
+       <h2>Now you may Scroll back to Top</h2>
+   </footer>
+   
+    <a class="fork-mmk" href="https://github.com/mmkjony/jQuery.toTop" target="_blank">
+        <img src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+    </a>
+    
+    
+    
+   
+   <!-- Scroll to Top button selector -->
+   <a class="to-top">Top &uarr;</a>
+   
+   
+   
+   
+   <!---- \\\ Scripts /// ---->
+   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script src="jquery.toTop.min.js"></script>
+   
+   <script>
+       jQuery(function($){
+           // Plugin activation (basic)
+           // $('.to-top').toTop();
+
+           // Plugin activation with options
+           $('.to-top').toTop({
+               //options with default values
+               autohide: true,  //boolean 'true' or 'false'
+               offset: 420,     //numeric value (as pixels) for scrolling length from top to hide automatically
+               speed: 500,      //numeric value (as mili-seconds) for duration
+               right: 15,       //numeric value (as pixels) for position from right
+               bottom: 30       //numeric value (as pixels) for position from bottom
+           });
+       });
+   </script>
+    
+</body>
+</html>
