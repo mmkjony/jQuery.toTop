@@ -1,7 +1,7 @@
 /**
  *  Plugin Name: jQuery toTop for smoothly Scroll back to Top
  *  Plugin URL: https://github.com/mmkjony/jQuery.toTop
- *  Version: 1.0
+ *  Version: 1.1
  *  Author: MMK Jony
  *  Author URL: https://github.com/mmkjony
  *  License: Licensed under MIT
@@ -22,19 +22,25 @@
             autohide: true,
             offset: 420,
             speed: 500,
+            position: true,
             right: 15,
             bottom: 30
         }, opt);
         
         elem.css({
-            'position': 'fixed',
-            'right': options.right,
-            'bottom': options.bottom,
             'cursor': 'pointer'
         });
         
         if(options.autohide){
             elem.css('display', 'none');
+        }
+        
+        if(options.position){
+            elem.css({
+                'position': 'fixed',
+                'right': options.right,
+                'bottom': options.bottom,
+            });
         }
         
         elem.click(function(){
