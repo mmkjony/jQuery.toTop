@@ -45,6 +45,7 @@ You can add any html element, and style it as you want
       autohide: true,
       offset: 420,
       speed: 500,
+      position: true,
       right: 15,
       bottom: 30
   });
@@ -53,13 +54,13 @@ You can add any html element, and style it as you want
 
 ### Changelog:
 ------
-# v1.1
+v1.1
 ======
-**1. Options added for custom positioning.
+**1. Options added for custom positioning.**
 
-# v1.0
+v1.0
 ======
-**1. Initial Release
+**1. Initial Release**
 
 
 ### License
