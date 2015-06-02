@@ -54,13 +54,13 @@ You can add any html element, and style it as you want
 
 ### Changelog:
 ------
-v1.1
+**v1.1**
 ======
-**1. Options added for custom positioning.**
+* Options added for custom positioning.
 
-v1.0
+**v1.0**
 ======
-**1. Initial Release**
+* Initial Release
 
 
 ### License
