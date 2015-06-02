@@ -55,11 +55,9 @@ You can add any html element, and style it as you want
 ### Changelog:
 ------
 **v1.1**
-
 * Options added for custom positioning.
 
 **v1.0**
-
 * Initial Release
 
 
