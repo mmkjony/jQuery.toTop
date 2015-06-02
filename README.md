@@ -21,6 +21,7 @@ You can add any html element, and style it as you want
 
 **3. Activate the Plugin**
 ````javascript
+  //basic activation - with all default values
   $('.to-top').toTop();
 ````
 
