@@ -310,7 +310,7 @@
    
    <script>
        jQuery(function($){
-           // Plugin activation (basic)
+           // Plugin activation (basic - with all default values)
            // $('.to-top').toTop();
 
            // Plugin activation with options
@@ -319,8 +319,9 @@
                autohide: true,  //boolean 'true' or 'false'
                offset: 420,     //numeric value (as pixels) for scrolling length from top to hide automatically
                speed: 500,      //numeric value (as mili-seconds) for duration
-               right: 15,       //numeric value (as pixels) for position from right
-               bottom: 30       //numeric value (as pixels) for position from bottom
+               position:true,   //boolean 'true' or 'false'. Set this 'false' if you want to add custom position with your own css
+               right: 15,       //numeric value (as pixels) for position from right. It will work only if the 'position' is set 'true'
+               bottom: 30       //numeric value (as pixels) for position from bottom. It will work only if the 'position' is set 'true'
            });
        });
    </script>
