@@ -1,6 +1,6 @@
 jQuery - toTop()
 =======
-A simple, customizable and light-weight (~1KB) plugin for smoothly Scroll back to Top.
+A simple, highly customizable and ultra light-weight (~1KB) plugin for smoothly Scroll back to Top.
 
 ------
 [View Demo](http://mmkjony.github.io/jQuery.toTop/)
@@ -17,7 +17,7 @@ A simple, customizable and light-weight (~1KB) plugin for smoothly Scroll back t
 ````html
   <a class="to-top">Top &uarr;</a>
 ````
-You can add and style your element as you want
+You can add any html element, and style it as you want
 
 **3. Activate the Plugin**
 ````javascript
@@ -32,8 +32,9 @@ You can add and style your element as you want
 | autohide | boolean | You have options whether you want your button to hide automatically or not. You can choose 'true' or 'false'. `default: true` |
 | offset | Integer (px) | Scrolling length from top to hide automatically. `default: 420` |
 | speed | Integer (ms) | The duration for scroll and fade speed. `default: 500` |
-| right | Integer (px) | Position from right. `default: 15` |
-| bottom | Integer (px) | Position from bottom. `default: 30` |
+| position | boolean | You have this option whether you want to add custom position in css. Set this 'false' if you want to add custom position with your own css. `default: true` |
+| right | Integer (px) | Position from right. (It will work only if 'position' is set 'true'.) `default: 15` |
+| bottom | Integer (px) | Position from bottom. (It will work only if 'position' is set 'true'.) `default: 30` |
 
 
 ### Plugin activation with options
@@ -49,6 +50,16 @@ You can add and style your element as you want
   });
 ````
 
+
+### Changelog:
+------
+# v1.1
+======
+**1. Options added for custom positioning.
+
+# v1.0
+======
+**1. Initial Release
 
 
 ### License
